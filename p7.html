@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 7</title>
+</head>
+<body>
+    <h1>Biblioteca de libros online (PCr2 Books)</h1>
+    <form action="enviar.php" method="post">
+        <label for="titulo">Título del libro:</label>
+        <input type="text" id="titulo" name="titulo">
+        <br><br>
+
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor">
+        <br><br>
+
+        <label for="genero">Género:</label>   
+        <select id="genero" name="genero">
+            <option value="ficcion">Ciencia ficción</option>
+            <option value="romance">Romance</option>
+            <option value="aventura">Aventura</option>
+            <option value="suspenso">Suspenso</option>
+        </select>
+        <br><br>
+
+        <label for="fecha_inicio">Fecha de publicación: </label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio">
+        <label for="fecha_fin"> Hasta: </label>
+        <input type="date" id="fecha_fin" name="fecha_fin">
+        <br><br>
+
+        <label for="ordenar">Ordenar por:</label>
+        <select id="ordenar" name="ordenar">
+            <option value="popularidad">Popularidad</option>
+            <option value="fecha">Fecha de publicación</option>
+            <option value="relevancia">Relevancia</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
