@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muebles Rose</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
-        <h1>MUEBLERIA ROSE</h1>
+        <h1 id="nombre_tienda">MUEBLERIA ROSE</h1>
         <div>
-            <nav>
+            <nav id="menu_nav">
                 <a href="index.html">Home</a> |
                 <a href="Galeria.html">Galeria</a> |
                 <a href="contacto.html">Contacto</a> |
@@ -19,87 +21,89 @@
         </div>
     </header>
     
-    <section>
+    <section id="cat">
         <h2>Categorias De Productos</h2>
         <div>
-            <img src="img/sala.png" alt="Sala" height="200">
+            <img src="img/sala.png" alt="Sala" height="200"><br>
             <a href="#">Sala</a>
         </div>
         <div>
-            <img src="img/habitacion.png" alt="Habitacion" height="200">
+            <img src="img/habitacion.png" alt="Habitacion" height="200"><br>
             <a href="#">Habitacion</a>
         </div>
         <div>
-            <img src="img/cocina.png" alt="Cocina" height="200">
+            <img src="img/cocina.png" alt="Cocina" height="200"><br>
             <a href="#">Cocina</a>
         </div>
     </section>
 
-    <section>
+    <section id="sobre_nos">
         <h2>Sobre Nosotros</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero dolor in officiis nesciunt expedita sit beatae quia. Nam, dolorum vel nostrum dicta in eligendi corrupti repellendus magnam dolore numquam!</p>
     </section>
 
     <main>
         <h2>Nuestros Productos</h2>
-        <div>
+        <div class="productos">
             <img src="img/sillon1.png" alt="sillon1" height="200">
             <h4>Sillon gris</h4>
-            <p>Sala Esquinera Minimalista Sillón Esquinero Economica Modern Color Gris <br>
-            <b>$6,990</b></p>
+            <p>Sala Esquinera Minimalista Sillón Esquinero Economica Modern Color Gris </p>
+            <p>6,990</p>
             <a href="#">Agregar al carrito</a>
         </div>
-        <div>
+        <div class="productos">
             <img src="img/sillon2.png" alt="sillon2" height="200">
             <h4>Sillon blanco</h4>
-            <p>Sala Esquinera Para 5 Personas <br>
-            <b>$5,800</b></p>
+            <p> Esquinera Para 5 Personas </p>
+            <p>$5,800</p>
             <a href="#">Agregar al carrito</a>
         </div>
-        <div>
+        <div class="productos">
             <img src="img/ropero1.png" alt="ropero1" height="200">
             <h4>Closet gris</h4>
-            <p>Ropero Closet 3 Piezas Gris Dormitorio Armario Organizador Rk <br>
-            <b>$13,329</b></p>
+            <p>Ropero Closet 3 Piezas Gris Dormitorio Armario Organizador Rk </p>
+            <p>$13,329</p>
             <a href="#">Agregar al carrito</a>
         </div>
-        <div>
+        <div class="productos">
             <img src="img/ropero2.png" alt="ropero2" height="200">
             <h4>Closet cafe</h4>
-            <p>Ropero Demóbile Flash II color ébano touch de mdp con 6 puertas batientes <br>
-            <b>$4,699</b></p>
+            <p>Ropero Demóbile Flash II color ébano touch de mdp con 6 puertas batientes</p>
+            <p>$4,699</p>
             <a href="#">Agregar al carrito</a>
         </div>
-        <div>
+        <div class="productos">
             <img src="img/banco1.png" alt="banco1" height="200">
             <h4>Bancos grises</h4>
-            <p>Set De 2 Bancos Sillas Con Respaldo Y Apoyabrazos Altura Regulable Giratorio 360° Diseño Moderno Y Elegante Gris Ws98106 Mueblick <br>
-            <b>$2,489</b></p>
+            <p>Set De 2 Bancos Sillas Con Respaldo Y Apoyabrazos Altura Regulable Giratorio 360° Diseño Moderno Y Elegante Gris Ws98106 Mueblick </p>
+            <p>$2,489</p>
             <a href="#">Agregar al carrito</a>
         </div>
-        <div>
+        <div class="productos">
             <img src="img/banco2.png" alt="banco2" height="200">
             <h4>Bancos negros</h4>
-            <p>Set 4 Sillas de bar con reposapiés altura ajustable y diseño ergonómico Gaon GNBRS01 <br>
-            <b>$2,129</b></p>
+            <p>Set 4 Sillas de bar con reposapiés altura ajustable y diseño ergonómico Gaon GNBRS01 </p>
+            <p>$2,129</p>
             <a href="#">Agregar al carrito</a>
         </div>
     </main>
 
     <footer>
-        <div>
-            <h4>Categorias Adicionales</h4>
+        <h2>Categorias Adicionales</h2>
+        <nav class="footer_menu">
             <a href="galeria.html">Oficina</a> | <a href="galeria.html">Baño</a> | <a href="galeria.html">Comedor</a>
-        </div>
-        <div>
-            <h4>Sobre Nosotros</h4>
+        </nav>
+        
+        <h2>Sobre Nosotros</h2>
+        <nav class="footer_menu">
             <a href="nosotros.html">Nuestra tienda</a> | <a href="nosotros.html">Mision, Vision y Valores</a> | <a href="nosotros.html">Politica De Privacidad</a> |
             <a href="nosotros.html">Terminos De Servicio</a>
-        </div>
-        <div>
-            <h4>Soporte</h4>
+        </nav>
+
+        <h2>Soporte</h2>
+        <nav class="footer_menu">
             <a href="contacto.html">Preguntas Frecuentes</a> | <a href="contacto.html">Ayuda En Linea</a> | <a href="contacto.html">Confianza Y Seguridad</a>
-        </div>
+        </nav>
         <p>Todos los derechos reservados a Mueblerias Rose</p>
     </footer>
 </body>

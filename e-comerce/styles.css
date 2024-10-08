@@ -1,0 +1,87 @@
+header{
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+#nombre_tienda{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#menu_nav{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#menu_nav a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#cat{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+}
+
+#cat h2{
+    font-size: 1.5rem;
+    font-style: arial;
+}
+
+#cat a{
+    font-size: 1rem;
+    font-style: italic;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#sobre_nos{
+    text-align: center;
+    padding: 2rem;
+}
+
+#sobre_nos h2{
+    font-size: 1.5rem;
+    font-style: arial;
+}
+
+#sobre_nos p{
+    font-size: 1rem;
+    font-style: arial;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-style: arial;
+    text-align: center;
+}
+
+.productos{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+}
+
+.productos h4{
+    font-size: 1.2rem;
+    font-style: arial;
+    text-align: center;
+}
+
+.productos img{
+    width: 200px;
+    height: 200px;
+}
+
+.productos p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: arial;
+    margin-top: 1rem;
+}
+
+.productos a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
