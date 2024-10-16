@@ -23,11 +23,23 @@ header{
     font-size: 2rem;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    display: flex;
+    transition: 0.5s;
+}
+
+#menu_nav a:hover{
+    color: rgb(179, 108, 207);
+    font-size: 2.2rem;
 }
 
 #categorias{
     text-align: center;
+}
+
+#categorias h2{
+    font-size: 1.5rem;
+    font-style: arial;
+    display: flex;
+    justify-content: center;
 }
 
 #cat{
@@ -40,12 +52,6 @@ header{
     flex-wrap: wrap;
 }
 
-#cat h2{
-    font-size: 1.5rem;
-    font-style: arial;
-    display: flex;
-}
-
 #cat a{
     font-size: 1rem;
     font-style: italic;
@@ -55,8 +61,7 @@ header{
     flex-direction: column;
 }
 
-#cat image{
-    width: 200px;
+#cat img{
     height: 200px;
 }
 
@@ -78,7 +83,6 @@ header{
 #titulo_np{
     font-size: 1.5rem;
     font-style: arial;
-    text-align: center;
 }
 
 #main_section{
@@ -86,13 +90,13 @@ header{
 }
 
 #main_productos{
-    display: flex;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     justify-content: center;
     justify-content: space-around;
     padding: 2rem;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .productos{
@@ -100,33 +104,55 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem; 
+    padding: 2rem;
     flex-direction: column;
+    border-radius: 3rem;
+    background-color: rgb(243, 243, 243);
+}
+
+#productos1{
+    grid-column: 1/3;
+}
+
+#productos4{
+    grid-column: 2/4;
+}
+
+#productos5{
+    grid-column: 1/3;
 }
 
 .productos h4{
     font-size: 1.2rem;
     font-style: arial;
-    display: flex;
 }
 
 .productos img{
-    width: 200px;
-    height: 200px;
-    display: flex;
+    width: 400px;
+    height: 400px;
 }
 
 .productos p{
     font-size: 1.2rem;
     font-style: arial;
     margin-top: 1rem;
-    display: flex;
 }
 
 .productos a{
+    background-color: rgb(179, 108, 207);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    display: flex;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.productos a:hover{
+    background-color: rgb(130, 76, 151);
 }
 
 #footer_section{
@@ -143,8 +169,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 2rem; 
     flex-direction: column;
 }
@@ -171,4 +195,142 @@ header{
 
 footer{
     background-color: rgb(243, 243, 243);
+}
+
+@media (max-width: 768px) {
+    #nombre_tienda{
+        font-size: 2.5rem;
+    }
+    
+    #menu_nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #menu_nav a{
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    #main_productos{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    
+    .productos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        flex-direction: column;
+        border-radius: 3rem;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .productos h4{
+        font-size: 1.2rem;
+        font-style: arial;
+    }
+    
+    .productos img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    #nombre_tienda{
+        font-size: 2rem;
+    }
+    
+    #menu_nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #menu_nav a{
+        font-size: 1.3rem;
+    }
+
+    #menu_nav a:hover{
+        font-size: 1.5rem;
+    }
+
+    #cat img{
+        height: 150px;
+    }
+
+    #main_productos{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 2rem;
+    }
+    
+    .productos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        flex-direction: column;
+        border-radius: 3rem;
+        background-color: rgb(243, 243, 243);
+    }
+
+    .productos h4{
+        font-size: 1rem;
+        font-style: arial;
+    }
+    
+    .productos img{
+        width: 125px;
+        height: 125px;
+    }
+    
+    .productos p{
+        font-size: 0.6rem;
+    }
+
+    #productos1{
+        grid-column: 1;
+    }
+    
+    #productos4{
+        grid-column: 1;
+    }
+    
+    #productos5{
+        grid-column: 1;
+    }
+
+    #footer_section{
+        padding: 1rem; 
+    }
+
+    .footer_menu{
+        padding: 1rem; 
+    }
+    
+    .footer_menu h2{
+        font-size: 1rem;
+    }
+    
+    .footer_menu a{
+        font-size: .8rem;
+    }
+    
+    #copyright{
+        font-size: .8rem;
+    }
 }
