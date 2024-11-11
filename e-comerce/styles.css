@@ -197,6 +197,81 @@ footer{
     background-color: rgb(243, 243, 243);
 }
 
+#main_sectionSN{
+    text-align: center;
+}
+
+#main_sectionSN h2{
+    font-size: 2rem;
+    font-style: arial;
+}
+
+#main_sobrenosotros{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+#tienda_section{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    grid-column: 1/2;
+}
+
+#tienda_section img{
+    width: 700px;
+}
+
+#mvv{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    grid-column: 1/2;
+}
+
+.sobrenosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    flex-direction: column;
+    border-radius: 3rem;
+    background-color: rgb(243, 243, 243);
+}
+
+.sobrenosotros h4{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.sobrenosotros p{
+    font-size: 1.2rem;
+    font-style: arial;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.sobrenosotros li{
+    font-size: 1.2rem;
+    font-style: arial;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     #nombre_tienda{
         font-size: 2.5rem;
